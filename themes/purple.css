@@ -20,4 +20,6 @@
 	--transition: all 0.3s linear;
 
 	--contactColor: #fff;
+
+	--boxShadow: rgba(0, 0, 0, 0.75);
 }
