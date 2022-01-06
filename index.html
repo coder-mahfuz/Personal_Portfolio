@@ -4,7 +4,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+
+    <!-- styles -->
     <link rel="stylesheet" href="style.css">
+
+    <link id="theme-style" rel="stylesheet" href="/themes/dark.css">
 
 <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,17 +30,17 @@
                        <div id="dot-3" class="browser-dot"></div> 
                     </div>
                    <ul id="navigation">
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#contact-form">Contact</a></li>
                    </ul>
                </div>
                <div class="left-column">
                <img src="images/pro__pic.jpg" alt="" id="profile-pic">
                <h5 style="text-align: center; line-height: 0;" >Personalize Theme</h5>
                <div id="theme-options-wrapper">
-                    <div id="light-mode" class="theme-dot"></div>
-                    <div id="blue-mode" class="theme-dot"></div>
-                    <div id="green-mode" class="theme-dot"></div>
-                    <div id="purple-mode" class="theme-dot"></div>
+                    <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                    <div data-mode="dark" id="dark-mode" class="theme-dot"></div>
+                    <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                    <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                </div>
 
                <p id="settings-note">*Theme options will be saved for<br>your next visit.</p>
@@ -82,17 +86,17 @@
 
                 <div id="skills">
                     <ul>
-                        <li>Python</li>
-                        <li>Django</li>
+                        <li>PHP</li>
                         <li>JavaScript</li>
-                        <li>PostgreSQL</li>
+                        <li>Shopify</li>
+                        <li>MongoDB</li>
                     </ul>
 
                     <ul>
-                        <li>Python</li>
-                        <li>Django</li>
-                        <li>JavaScript</li>
-                        <li>PostgreSQL</li>
+                        <li>Laravel</li>
+                        <li>NodeJS</li>
+                        <li>Liquid</li>
+                        <li>Mysql</li>
                     </ul>
 
                 </div>
@@ -101,25 +105,75 @@
                 <div class="social-links">
 
                     <img id="social-img" src="images/follow.png" alt="">
-                    <h3>Find me on Twitter & Youtube</h3>
+                    <h3>Find me on Twitter & GitHub</h3>
 
-                    <a target="_blank" href="#">Twitter: mahfuzbw</a>
-                    <a target="_blank" href="#">LinkedIn: Mahfuzur Rahman</a>
+                    <a target="_blank" href="https://twitter.com/MahfuzBw">Twitter: MahfuzBw</a>
+                    <a target="_blank" href="https://github.com/coder-mahfuz">GitHub: coder-mahfuz</a>
 
                 </div>
            </div>
 
        </div> 
     </section>
-    <section class="s1">
+    <section class="s3">
        <div class="main-container">
-           Portfolio
+           <div class="post-main-wrapper">
+
+        <h3 id="projects-heading">Some of my past projects</h3>
+
+           <div class="post-wrapper">
+            <div class="post">
+                <img class="thumbnail" src="images/ecom.jpg" alt="">
+                <div class="post-preview">
+                    <h6 class="post-title">post title</h6>
+                    <p class="post-intro">this is a sentence.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+
+            <div class="post">
+                <img class="thumbnail" src="images/ecom.jpg" alt="">
+                <div class="post-preview">
+                    <h6 class="post-title">post title</h6>
+                    <p class="post-intro">this is a sentence.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+
+            <div class="post">
+                <img class="thumbnail" src="images/ecom.jpg" alt="">
+                <div class="post-preview">
+                    <h6 class="post-title">post title</h6>
+                    <p class="post-intro">this is a sentence.</p>
+                    <a href="#">Read more</a>
+                </div>
+            </div>
+           </div>
+        </div>
        </div> 
     </section>
-    <section class="s2">
+    <!-- <section class="s2">
        <div class="main-container">
-           Contact
+        <h3 style="text-align:center">Get in Touch</h3>
+
+        <form id="contact-form" action="">
+            <label for="name">Name</label>
+            <input type="text" class="input-field" name="name">
+
+            <label for="subject">Subject</label>
+            <input type="text" class="input-field" name="subject">
+
+            <label for="email">Email</label>
+            <input type="text" class="input-field" name="email">
+
+            <label for="message">Message</label>
+            <textarea class="input-field" name="message"></textarea>
+
+            <input id="submit-btn" type="submit" value="Send">
+        </form>
        </div> 
-    </section>
+    </section> -->
+
+    <script src="app.js"></script>
 </body>
 </html>
