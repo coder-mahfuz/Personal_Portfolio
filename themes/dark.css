@@ -15,4 +15,10 @@
 
     --buttonColor: #000000;
 
+	--popupOverLay: rgba(25, 39, 52, 0.4);
+
+    --transition: all 0.3s linear;
+
+    --contactColor: #fff;
+
 }

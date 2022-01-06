@@ -41,3 +41,28 @@ function setTheme(mode) {
     
     localStorage.setItem("theme", mode)
 }
+
+
+
+/* contact form popup */
+const contact = document.getElementById("contact");
+const popup = document.querySelector('.popup');
+
+
+contact.addEventListener('click', function () {
+    popup.classList.add("open-popup")
+    popup.classList.remove("popup-hidden")
+    console.log("I'm working on");
+})
+  
+/* close popup by clicking outside*/
+
+popup.addEventListener("click", function(event) {
+      if (
+        !event.target.closest("form")
+      ) {
+          popup.classList.remove("open-popup")
+          popup.classList.add("popup-hidden")
+      }
+    }
+  )
