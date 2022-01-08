@@ -30,13 +30,13 @@ function setTheme(mode) {
     modeHref.href = "style.css"
 }
     if (mode == "dark") {
-    modeHref.href = "/themes/dark.css"
+    modeHref.href = "themes/dark.css"
 }
     if (mode == "green") {
-    modeHref.href = "/themes/green.css"
+    modeHref.href = "themes/green.css"
 }
     if (mode == "purple") {
-    modeHref.href = "/themes/purple.css"
+    modeHref.href = "themes/purple.css"
     }
     
     localStorage.setItem("theme", mode)
